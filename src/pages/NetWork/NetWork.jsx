@@ -1,4 +1,4 @@
-import s from './index.styles.css'
+import s from './styles.module.css'
 
 import React from 'react'
 

@@ -7,9 +7,12 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "newcomp": "mkdir NewComponent && touch ./NewComponent/NewComponent.jsx && touch ./NewComponent/index.styles.css && echo import s from './index.styles.css' > ./NewComponent/NewComponent.jsx"
+    "newcomp": "mkdir NewComponent && touch ./NewComponent/NewComponent.jsx && touch ./NewComponent/styles.module.css && echo import s from './styles.module.css' > ./NewComponent/NewComponent.jsx"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.10.0"

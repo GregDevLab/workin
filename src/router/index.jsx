@@ -6,12 +6,12 @@ import Messaging from '../pages/Messaging/Messaging'
 import NetWork from '../pages/NetWork/NetWork'
 import Notifications from '../pages/Notifications/Notifications'
 import Error from '../pages/Error/Error'
-import Navigation from '../components/Navigation/Navigation'
+import Header from '../components/Header/Header'
 
 const MyRouter = () => {
     return (
         <BrowserRouter>
-            <Navigation />
+            <Header />
             <Routes>
                 <Route path="/" element={<Feed />} />
                 <Route path="/emplois" element={<Jobs />} />

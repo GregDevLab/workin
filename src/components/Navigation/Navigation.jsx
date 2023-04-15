@@ -1,26 +1,43 @@
 import { NavLink } from 'react-router-dom'
-import s from './index.styles.css'
-
+import s from './styles.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBell, faBriefcase, faCommentDots, faHouse, faUserGroup } from '@fortawesome/free-solid-svg-icons'
 import React from 'react'
+
 
 const Navigation = () => {
     return (
-        <nav>
-            <ul>
+        <nav className={s.container}>
+            <ul className={s.nav_links}>
                 <li>
-                    <NavLink to="/">accueil</NavLink>
+                    <NavLink to="/" className={({ isActive }) => `${s.link} ${isActive && s.active}`}>
+                        <FontAwesomeIcon icon={faHouse} />
+                        <p>Accueil</p>
+                    </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/emplois">emplois</NavLink>
+                    <NavLink to="/emplois" className={({ isActive }) => `${s.link} ${isActive && s.active}`}>
+                        <FontAwesomeIcon icon={faBriefcase} />
+                        <p>Emplois</p>
+                    </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/messagerie">messagerie</NavLink>
+                    <NavLink to="/messagerie" className={({ isActive }) => `${s.link} ${isActive && s.active}`}>
+                        <FontAwesomeIcon icon={faCommentDots} />
+                        <p>Messagerie</p>
+                    </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/reseau">réseau</NavLink>
+                    <NavLink to="/reseau" className={({ isActive }) => `${s.link} ${isActive && s.active}`}>
+                        <FontAwesomeIcon icon={faUserGroup} />
+                        <p>Réseau</p>
+                    </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/notifications">notifications</NavLink>
+                    <NavLink to="/notifications" className={({ isActive }) => `${s.link} ${isActive && s.active}`}>
+                        <FontAwesomeIcon icon={faBell} />
+                        <p>Notifications</p>
+                    </NavLink>
                 </li>
             </ul>
         </nav>

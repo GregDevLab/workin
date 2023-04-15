@@ -1,0 +1,25 @@
+.container {
+    min-width: 365px;
+    max-width:600px;
+    margin-left: auto;
+}
+
+.nav_links {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link{
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: grey
+}
+
+.active{
+    color: white;
+    border-bottom: 2px solid white;
+}

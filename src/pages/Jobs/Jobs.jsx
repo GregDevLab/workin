@@ -1,9 +1,10 @@
-import s from './index.styles.css'
+import s from './styles.module.css'
+
 import React from 'react'
 
 const Jobs = () => {
     return (
-        <h1 className={s.title}>Jobs</h1>
+        <h1 >Jobs</h1>
     )
 }
 
